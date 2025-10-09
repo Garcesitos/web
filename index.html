@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title data-translate="title">Cargoliner Global | Transporte Internacional de Mercancías</title>
+	<meta name="description"
+		content="Transporte internacional de mercancías por aire, mar y aduana. Soluciones logísticas integrales en España y el mundo.">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header class="header">
+		<div class="logo">
+			<img src="objetos/logo.png" alt="Cargoliner Global">
+		</div>
+
+		<!-- Botón hamburguesa -->
+		<button class="hamburger" onclick="toggleMenu()">☰</button>
+
+		<nav class="nav" id="nav">
+			<ul>
+				<li><a href="index.html" data-translate="nav_home">Inicio</a></li>
+				<li><a href="quienes-somos.html" data-translate="nav_about">Quiénes somos</a></li>
+				<li><a href="servicios.html" data-translate="nav_services">Servicios</a></li>
+				<li><a href="contacto.html" data-translate="nav_contact">Contacto</a></li>
+			</ul>
+		</nav>
+
+		<div class="extras">
+			<div id="idiomas">
+				<button onclick="translatePage('es')" class="lang-btn">
+					<img src="objetos/language_es.png" alt="Español" height="30" width="30">
+				</button>
+				<button onclick="translatePage('en')" class="lang-btn">
+					<img src="objetos/language_en.png" alt="English" height="30" width="30">
+				</button>
+			</div>
+
+			<div id="telefono">
+				<p><a href="callto:+34917473902">Tel-(34)91 747 39 02</a></p>
+				<p><a href="mailto:global@cargoliner.es">global@cargoliner.es</a></p>
+			</div>
+		</div>
+	</header>
+
+	<div class="mainContent">
+
+		<!-- Hero -->
+		<section class="hero hero-small">
+			<div class="hero-content">
+				<h1 data-translate="index_title">Cumpliendo sus necesidades detransporte nacional e internacional</h1>
+				<p data-translate="index_text">Transporte internacional de mercancías por aire, mar y tierra con
+					soluciones
+					aduaneras completas.</p>
+			</div>
+		</section>
+
+		<!-- Confianza -->
+		<section class="trust generic-title">
+			<h2 data-translate="trust_title" class="generic-title">Por Qué Elegirnos</h2>
+			<span class="separator"></span>
+			<div class="trust-grid">
+
+				<div class="trust-card">
+					<img src="objetos/customer-rating.jpg" alt="Experiencia">
+					<p data-translate="trust_item1">+20 años de experiencia en logística internacional</p>
+				</div>
+
+				<div class="trust-card">
+					<img src="objetos/iata-thumbnail.jpeg" alt="IATA">
+					<p data-translate="trust_item2">Miembros IATA y redes globales de transporte</p>
+				</div>
+
+				<div class="trust-card">
+					<img src="objetos/global-network.png" alt="Cobertura Global">
+					<p data-translate="trust_item3">Cobertura global con socios estratégicos</p>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- Contacto -->
+		<section class="cta">
+			<h2 data-translate="cta_title" class="generic-title">¿Listo para enviar tu mercancía?</h2>
+			<span class="separator"></span>
+			<a href="contacto.html" class="btn-primary" data-translate="index_cta">Solicita una cotización</a>
+		</section>
+
+
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer-custom">
+		<div class="footer-top container">
+			<div class="footer-col">
+				<h2 data-translate="services_title">Servicios</h2>
+				<ul>
+					<li><a href="aereo.html" data-translate="air_title">Transporte Aéreo</a></li>
+					<li><a href="maritimo.html" data-translate="sea_title">Transporte Marítimo</a></li>
+					<li><a href="aduana.html" data-translate="customs_title">Gestión Aduanera</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h2 data-translate="info_title">Información</h2>
+				<ul>
+					<li><a href="aviso-legal.html" data-translate="legal_notice">Aviso Legal</a></li>
+					<li><a href="privacidad.html" data-translate="privacy_policy">Política de Privacidad</a></li>
+					<li><a href="cookies.html" data-translate="cookie_policy">Política de Cookies</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h2 data-translate="nav_contact">Contacto</h2>
+				<ul>
+					<li><a href="callto:+34917473902">Tel-(34)91 747 39 02</a></li>
+					<li><a href="mailto:global@cargoliner.es">global@cargoliner.es</a></li>
+					<li data-translate="contact_city">Madrid, España</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-mid">
+			<h3 data-translate="associates_title">Asociados</h3>
+		</div>
+		<div class="footer-mid">
+			<img src="objetos/aop-logo.png" alt="AOP" class="partner-logo">
+			<img src="objetos/iata-logo.png" alt="IATA" class="partner-logo">
+		</div>
+
+		<div class="footer-bottom">
+			<p data-translate="footer">© 2025 Cargoliner Global. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<!-- Script de traducción -->
+	<script src="translate.js"></script>
+	<script>
+		function toggleMenu() {
+			document.getElementById("nav").classList.toggle("active");
+		}
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const header = document.querySelector(".header");
+			const main = document.querySelector(".mainContent");
+			main.style.marginTop = header.offsetHeight + "px";
+
+			window.addEventListener("resize", () => {
+				main.style.marginTop = header.offsetHeight + "px";
+			});
+		});
+	</script>
+</body>
+
+</html>

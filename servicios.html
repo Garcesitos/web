@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="title_services">Cargoliner Global | Servicios</title>
+  <meta name="description"
+    content="Cargoliner Global, transporte internacional de mercancías por aire, mar y aduana. Soluciones logísticas a medida.">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="objetos/logo.png" alt="Cargoliner Global">
+    </div>
+
+    <!-- Botón hamburguesa -->
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="index.html" data-translate="nav_home">Inicio</a></li>
+        <li><a href="quienes-somos.html" data-translate="nav_about">Quiénes somos</a></li>
+        <li><a href="servicios.html" data-translate="nav_services">Servicios</a></li>
+        <li><a href="contacto.html" data-translate="nav_contact">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="extras">
+      <div id="idiomas">
+        <button onclick="translatePage('es')" class="lang-btn">
+          <img src="objetos/language_es.png" alt="Español" height="30" width="30">
+        </button>
+        <button onclick="translatePage('en')" class="lang-btn">
+          <img src="objetos/language_en.png" alt="English" height="30" width="30">
+        </button>
+      </div>
+
+      <div id="telefono">
+        <p><a href="callto:+34917473902">Tel-(34)91 747 39 02</a></p>
+        <p><a href="mailto:global@cargoliner.es">global@cargoliner.es</a></p>
+      </div>
+    </div>
+  </header>
+
+  <div class="mainContent">
+    <!-- Hero -->
+    <section class="hero hero-small">
+      <div class="hero-content">
+        <h1 data-translate="services_title">Nuestros Servicios</h1>
+        <p data-translate="services_subtitle">Soluciones logísticas completas: aéreo, marítimo y aduana.</p>
+      </div>
+    </section>
+
+    <!-- Servicios Detallados -->
+    <section class="services-detailed">
+      <!-- Transporte Aéreo -->
+      <div class="service-card-detailed">
+        <img src="objetos/avion-ocaso1.jpg" alt="Transporte Aéreo">
+        <h2 data-translate="air_title">Transporte Aéreo</h2>
+        <span class="separator"></span>
+        <p data-translate="air_text">
+          Envíos rápidos y seguros a nivel internacional con cobertura global. Trabajamos con aerolíneas líderes
+          para garantizar la entrega en tiempo y forma.
+        </p>
+        <a href="aereo.html" class="btn-primary" data-translate="info_btn">Más Información</a>
+      </div>
+
+      <!-- Transporte Marítimo -->
+      <div class="service-card-detailed">
+        <img src="objetos/barco.jpeg" alt="Transporte marítimo">
+        <h2 data-translate="sea_title">Transporte Marítimo</h2>
+        <span class="separator"></span>
+        <p data-translate="sea_text">
+          Soluciones económicas y confiables para grandes volúmenes de carga. Flexibilidad en contenedores y
+          rutas internacionales adaptadas a tus necesidades.
+        </p>
+        <a href="maritimo.html" class="btn-primary" data-translate="info_btn">Más Información</a>
+      </div>
+
+      <!-- Gestión Aduanera -->
+      <div class="service-card-detailed">
+        <img src="objetos/gestionAduanera.png" alt="Gestión Aduanera">
+        <h2 data-translate="customs_title">Gestión Aduanera</h2>
+        <span class="separator"></span>
+        <p data-translate="customs_text">
+          Asesoría y despacho aduanal para agilizar tus operaciones de comercio exterior. Información constante del
+          estado de tu mercancía desde origen hasta destino.
+        </p>
+        <a href="aduana.html" class="btn-primary" data-translate="info_btn">Más Información</a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="footer-top container">
+      <div class="footer-col">
+        <h2 data-translate="services_title">Servicios</h2>
+        <ul>
+          <li><a href="aereo.html" data-translate="air_title">Transporte Aéreo</a></li>
+          <li><a href="maritimo.html" data-translate="sea_title">Transporte Marítimo</a></li>
+          <li><a href="aduana.html" data-translate="customs_title">Gestión Aduanera</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 data-translate="info_title">Información</h2>
+        <ul>
+          <li><a href="aviso-legal.html" data-translate="legal_notice">Aviso Legal</a></li>
+          <li><a href="privacidad.html" data-translate="privacy_policy">Política de Privacidad</a></li>
+          <li><a href="cookies.html" data-translate="cookie_policy">Política de Cookies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 data-translate="nav_contact">Contacto</h2>
+        <ul>
+          <li><a href="callto:+34917473902">Tel-(34)91 747 39 02</a></li>
+          <li><a href="mailto:global@cargoliner.es">global@cargoliner.es</a></li>
+          <li data-translate="contact_city">Madrid, España</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-mid">
+      <h3 data-translate="associates_title">Asociados</h3>
+    </div>
+    <div class="footer-mid">
+      <img src="objetos/aop-logo.png" alt="AOP" class="partner-logo">
+      <img src="objetos/iata-logo.png" alt="IATA" class="partner-logo">
+    </div>
+
+    <div class="footer-bottom">
+      <p data-translate="footer">© 2025 Cargoliner Global. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="translate.js"></script>
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav").classList.toggle("active");
+    }
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const header = document.querySelector(".header");
+      const main = document.querySelector(".mainContent");
+      main.style.marginTop = header.offsetHeight + "px";
+
+      window.addEventListener("resize", () => {
+        main.style.marginTop = header.offsetHeight + "px";
+      });
+    });
+  </script>
+</body>
+
+</html>

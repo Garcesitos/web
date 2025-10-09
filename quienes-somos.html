@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="title_about">Cargoliner Global | Quiénes Somos</title>
+  <meta name="description"
+    content="Cargoliner Global, transporte internacional de mercancías por aire, mar y aduana. Más de 20 años de experiencia en logística.">
+  <link rel="stylesheet" href="estilos.css">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="objetos/logo.png" alt="Cargoliner Global">
+    </div>
+
+    <!-- Botón hamburguesa -->
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="index.html" data-translate="nav_home">Inicio</a></li>
+        <li><a href="quienes-somos.html" data-translate="nav_about">Quiénes somos</a></li>
+        <li><a href="servicios.html" data-translate="nav_services">Servicios</a></li>
+        <li><a href="contacto.html" data-translate="nav_contact">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="extras">
+      <div id="idiomas">
+        <button onclick="translatePage('es')" class="lang-btn">
+          <img src="objetos/language_es.png" alt="Español" height="30" width="30">
+        </button>
+        <button onclick="translatePage('en')" class="lang-btn">
+          <img src="objetos/language_en.png" alt="English" height="30" width="30">
+        </button>
+      </div>
+
+      <div id="telefono">
+        <p><a href="callto:+34917473902">Tel-(34)91 747 39 02</a></p>
+        <p><a href="mailto:global@cargoliner.es">global@cargoliner.es</a></p>
+      </div>
+    </div>
+  </header>
+
+  <div class="mainContent">
+    <!-- Hero -->
+    <section class="hero hero-small">
+      <div class="hero-content">
+        <h1 data-translate="about_title">Quiénes somos</h1>
+        <p data-translate="about_subtitle">Más de 20 años ofreciendo soluciones logísticas internacionales.</p>
+      </div>
+    </section>
+
+    <!-- Quiénes somos -->
+    <section class="about container">
+      <div class="about-text">
+        <h2 data-translate="about_title" class="generic-title">Quiénes somos</h2>
+        <span class="separator-left separator-mid"></span>
+
+        <p class="highlight" data-translate="about_text">
+          Fundada en 2005 con sede en el aeropuerto de Madrid-Barajas, Cargoliner está certificada por IATA y
+          se especializa en el transporte internacional de mercancías.
+        </p>
+
+        <p data-translate="about_p2">
+          <strong>"Dar un buen servicio es nuestra prioridad"</strong>: construimos relaciones duraderas con
+          nuestros clientes, ofreciendo confianza, seguridad y eficiencia en cada envío. Madrid
+        </p>
+
+        <p data-translate="about_p3">
+          Con una red global de profesionales en las principales ciudades del mundo, garantizamos soluciones
+          logísticas ágiles y rentables.
+        </p>
+      </div>
+
+      <div class="about-images">
+        <div class="img-large">
+          <img src="objetos/hongkong.png" alt="Oficinas internacionales">
+        </div>
+        <div class="img-grid">
+          <img src="objetos/johannesburg.jpg" alt="Transporte global">
+          <img src="objetos/london.jpg" alt="Logística internacional">
+        </div>
+      </div>
+    </section>
+
+    <!-- Network -->
+    <section class="network container">
+      <h2 data-translate="network_title" class="generic-title">Nuestra Red Global</h2>
+      <span class="separator"></span>
+      <p data-translate="network_text">Con representantes en países estratégicos, conectamos los principales hubs
+        internacionales para asegurar que tu carga llegue a cualquier parte del mundo.</p>
+      <div id="map"></div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="footer-top container">
+      <div class="footer-col">
+        <h2 data-translate="services_title">Servicios</h2>
+        <ul>
+          <li><a href="aereo.html" data-translate="air_title">Transporte Aéreo</a></li>
+          <li><a href="maritimo.html" data-translate="sea_title">Transporte Marítimo</a></li>
+          <li><a href="aduana.html" data-translate="customs_title">Gestión Aduanera</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 data-translate="info_title">Información</h2>
+        <ul>
+          <li><a href="aviso-legal.html" data-translate="legal_notice">Aviso Legal</a></li>
+          <li><a href="privacidad.html" data-translate="privacy_policy">Política de Privacidad</a></li>
+          <li><a href="cookies.html" data-translate="cookie_policy">Política de Cookies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 data-translate="nav_contact">Contacto</h2>
+        <ul>
+          <li><a href="callto:+34917473902">Tel-(34)91 747 39 02</a></li>
+          <li><a href="mailto:global@cargoliner.es">global@cargoliner.es</a></li>
+          <li data-translate="contact_city">Madrid, España</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-mid">
+      <h3 data-translate="associates_title">Asociados</h3>
+    </div>
+    <div class="footer-mid">
+      <img src="objetos/aop-logo.png" alt="AOP" class="partner-logo">
+      <img src="objetos/iata-logo.png" alt="IATA" class="partner-logo">
+    </div>
+
+    <div class="footer-bottom">
+      <p data-translate="footer">© 2025 Cargoliner Global. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="translate.js"></script>
+  <script src="cities.js"></script>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav").classList.toggle("active");
+    }
+
+    // ==============================
+    // Inicializar mapa con límites
+    // ==============================
+    const map = L.map('map', {
+      minZoom: 2,
+      maxZoom: 18,
+      maxBounds: [[-90, -220], [90, 220]],  // 🔹 límite para no alejar demasiado
+      maxBoundsViscosity: 1.0               // bloqueo suave al llegar al borde
+    }).setView([20, 0], 2);
+
+    // ==============================
+    // Capa base de OpenStreetMap
+    // ==============================
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // ==============================
+    // Añadir marcadores de ciudades
+    // ==============================
+    locations.forEach(loc => {
+      L.marker(loc.coords)
+        .addTo(map)
+        .bindPopup(`${loc.city}, ${loc.country}`);
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const header = document.querySelector(".header");
+      const main = document.querySelector(".mainContent");
+      main.style.marginTop = header.offsetHeight + "px";
+
+      window.addEventListener("resize", () => {
+        main.style.marginTop = header.offsetHeight + "px";
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
